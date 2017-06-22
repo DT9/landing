@@ -208,6 +208,26 @@ section {
         font-size: 50px;
     }
 }
+.vid-responsive {
+    width: 100%;
+    height: auto;
+}
+.badges {
+    .badge-link {
+        display: block;
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img {
+            height: 60px;
+        }
+        @media(min-width: 768px) {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    }
+}
 
 section.download {
     padding: 150px 0;
@@ -215,22 +235,6 @@ section.download {
     h2 {
         margin-top: 0;
         font-size: 50px;
-    }
-    .badges {
-        .badge-link {
-            display: block;
-            margin-bottom: 25px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            img {
-                height: 60px;
-            }
-            @media(min-width: 768px) {
-                display: inline-block;
-                margin-bottom: 0;
-            }
-        }
     }
     @media(min-width: 768px) {
         h2 {

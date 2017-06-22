@@ -1,134 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#" ng-app="hopper" device-detector hop-device-detected>
-  <head>
+<head>
+
     <meta charset="utf-8">
-    <meta content="en_US" http-equiv="Content-Language">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link href="http://cdn.hopper.com/media/bunny-logo-16sq-3386a23e100b3e9f83c047a07e5e4d0b.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <title>TutorLater - Tutoring Made Simple</title>
 
-    <meta name="google" value="notranslate">
-    <!-- This is not news -->
-    <meta content="noindex, nofollow" name="Googlebot-News">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta content="hopper" name="twitter:site">
-    <meta content="summary_large_image" property="twitter:card">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <meta name="p:domain_verify" content="ecbb1133cf17bd21f42ee13468468d63">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
-    <!-- App Links for google bot indexers -->
-    <link href="android-app://com.hopper.mountainview.play/hopper-flights/home?" rel="alternate" />
-    <link href="ios-app://904052407/hopper-flights/home?" rel="alternate" />
-    <meta name="google-site-verification" content="QGgEPLqE9KOpqxj1f66ptX3A9w5yCTc53kkrO131WBo" />
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
 
-    <meta content="403390266374962" property="fb:app_id">
-    <meta content="Tutorsmeet" property="og:site_name">
-    <meta content="Tutoring On Demand" property="og:title">
-    <meta content="http://cdn.hopper.com/media/both-apps-1920x1080-f8b64af9e2036e88257093a0d5ff0f0c.png" property="og:image">
-    <meta content="Save up to 40% on your next tutor. Tutorsmeet connects with you the best tutors around. Start learning to save time and money" property="og:description">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- Make it look pretty when people share hopper.com on Twitter/Facebook -->
-    <meta content="Tutorsmeet connects with you the best tutors around. Start learning to save time and money.
-" name="description" />
+</head>
 
-    <title>Tutorsmeet - Tutoring On Demand</title>
-    <link rel="stylesheet" href="css/main.css">
+<body id="page-top">
 
-    <!-- Typekit -->
-    <script type="text/javascript" src="//use.typekit.net/abi3otp.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">TutorLater</a>
+            </div>
 
-    <!-- GA -->
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');</script>
-    <!-- Mixpanel -->
-    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-    </script>
-    <!-- facebook -->
-    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');</script>
-  </head>
-  <body>
-    <div class="wrapper container">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 col-md-push-6">
-          <div>
-            <!--<ul class="nav nav-home nav-pills">
-              <li hop-track-click="p1_ba_homepage_action" p-context="'about'"><a href="//www.hopper.com/corp/about.html">About</a></li>
-              <li hop-track-click="p1_ba_homepage_action" p-context="'apple_icon'" class="hidden-xs"><a href="//www.hopper.com/download/app?device=ios"><img src="//www.hopper.com/static2/w2/images/app-store-icon.ac24d9a4.png"></a></li>
-              <li hop-track-click="p1_ba_homepage_action" p-context="'android_icon'" class="hidden-xs"><a href="//www.hopper.com/download/app?device=android"><img src="//www.hopper.com/static2/w2/images/google-play-icon.a558c2ff.png"></a></li>
-              <li hop-track-click="p1_ba_homepage_action" p-context="'support'"><a href="//support.hopper.com/">Support</a></li>
-              <li class="dropdown pull-right" dropdown>
-                <a href="#" class="dropdown-toggle" dropdown-toggle role="button" aria-haspopup="true" aria-expanded="false">
-                  More
-                </a>
-                <ul id="more" class="dropdown-menu dropdown-menu-left">
-                  <li hop-track-click="p1_ba_homepage_action" p-context="'blog_product_updates'"><a href="https://medium.com/@hopper_travel">Product Updates</a></li>
-                  <li hop-track-click="p1_ba_homepage_action" p-context="'blog_articles'"><a href="//www.hopper.com/articles">Travel Tips</a></li>
-                  <li hop-track-click="p1_ba_homepage_action" p-context="'blog_research'"><a href="//www.hopper.com/research">Research</a></li>
-                  <li hop-track-click="p1_ba_homepage_action" p-context="'more_press'"><a href="//www.hopper.com/corp/press.html">Press</a></li>
-                  <li hop-track-click="p1_ba_homepage_action" p-context="'more_jobs'"><a href="//www.hopper.com/jobs">Jobs</a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#download">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Support</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">More</a>
+                    </li>
                 </ul>
-              </li>
-            </ul>-->
-            <div class="logo"></div>
-            <div class="headsup">
-              <h3>Tutoring On Demand.<br/>Get the best tutors.</h3>
             </div>
-            <div class="text-me-the-app-yo">
-              <h4>Text me a link to the app:</h4>
-              <form class="form-inline" name="textMe" ng-controller="HopSendLinkCtrl">
-                <div class="form-group has-feedback">
-                  <div class="input-group">
-                    <input class="form-control" type="text" name="phone" ng-model="phone" required placeholder="Your phone number" hop-phone-number>
-                    <span class="icon-spin glyphicon glyphicon-refresh form-control-feedback ng-hide" ng-show="submitting" aria-hidden="true"></span>
-                    <span class="input-group-btn">
-                      <button hop-track-click="p1_ba_homepage_action" p-context="'send_app_link_text'" class="btn btn-primary" ng-click="sendLink()" ng-disabled="textMe.$invalid || submitting || submitted && isSuccess">Send</button>
-                    </span>
-                  </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <div class="logo form-group">
+                                TUTORLATER LOGO
+                            </div>
+                            <h1>
+                                Tutoring Made Simple. <br>Score the best tutors.
+                            </h1>
+                            <div class="collect-email form-group">
+                                <input class="form-group form-control col-xs-12 col-md-6" placeholder="Your Email">
+                                <a href="#download" class="btn btn-outline btn-xl page-scroll">Subscribe</a>
+                            </div>
+                            <div class="download-badges">
+                                <div class="badges">
+                                    <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                                    <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-danger ng-hide" ng-show="submitted && !isSuccess">Uh oh, that didn’t work. Try again.</p>
-                <p class="text-success ng-hide" ng-show="submitted && isSuccess">Done! Your text link is on its way.</p>
-              </form>
+                <div class="col-sm-5 col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+<!--                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">-->
+                                    <video src="img/vid.mp4" autoplay loop class="vid-responsive"></video>
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="store-badges">
-              <a hop-track-click="p1_ba_homepage_action" p-context="'appstore_link'" class="store-badge app-store" href="//hopper.com/download/app?device=ios" target="_blank">
-                <img class="app-store-badge" src="img/app-store-badge.svg">
-              </a>
-              <a hop-track-click="p1_ba_homepage_action" p-context="'playstore_link'" class="store-badge google-play" href="//hopper.com/download/app?device=android" target="_blank">
-                <img class="app-store-badge" src="img/google-play-badge.svg">
-              </a>
-            </div>
-          </div>
         </div>
-        <div class="col-xs-12 col-md-5 col-md-pull-6">
-          <div class="phone-splash">
-            <div class="screen">
-              <videogular class="demo-video" vg-auto-play="true" hop-vg-analytics hop-vg-state="state" ng-class="{playing: state.playback == 'play'}">
-                <vg-media vg-src="[{src:'img/vid.mp4', type:'video/mp4'}]" vg-preload="'none'" vg-loop="true"></vg-media>
-                <vg-overlay-play vg-template="hop-templates/hop-vg-overlay-play"></vg-overlay-play>
-              </videogular>
-              <videogular class="promo-video" hop-vg-analytics hop-vg-state="state" ng-class="{playing: state.playback == 'play', fullscreen: state.fullscreen}">
-                <vg-media ng-hide="!state.fullscreen" vg-src="[{src:'img/vid.mp4', type:'video/mp4'}]" vg-preload="'none'"></vg-media>
-                <vg-overlay-play vg-template="hop-templates/hop-vg-overlay-play"></vg-overlay-play>
-                <hop-vg-auto-fullscreen pause-on-exit="true"></hop-vg-auto-fullscreen>
-              </videogular>
-            </div>
-          </div>
+    </header>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 TutorLater. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+    </footer>
 
-    <script src="js/vendor.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-    <script src="js/main.js"></script>
-  </body>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
 </html>
